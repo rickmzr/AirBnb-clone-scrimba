@@ -4,3 +4,24 @@
   display: flex;
   align-items: center;
 }
+
+.hero-container {
+  padding: 26px 36px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-img {
+  height: 232px;
+  align-self: center;
+}
+
+.hero-title {
+  font-size: 36px;
+  margin: 16px 0 5px 0;
+}
+
+.hero-text {
+  max-width: 320px;
+  line-height: 110%;
+}
