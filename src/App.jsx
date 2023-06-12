@@ -8,6 +8,7 @@ function App() {
   const experienceCards = data.map((data) => {
     return (
       <Card
+        key={data.id}
         img={data.coverImg}
         rating={data.stats.rating}
         reviewCount={data.stats.reviewCount}
@@ -15,6 +16,7 @@ function App() {
         title={data.title}
         price={data.price}
         description={data.description}
+        openSpots={data.openSpots}
       />
     );
   });
@@ -23,7 +25,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      {experienceCards}
+      <section className="cards-list">{experienceCards}</section>
     </>
   );
 }
