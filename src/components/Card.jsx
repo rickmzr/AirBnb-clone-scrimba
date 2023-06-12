@@ -5,15 +5,15 @@ export default function Card(props) {
     <div className="card-container">
       <img
         className="card-pic"
-        src={`./src/assets/${props.img}`}
-        alt="Katie Zaferes in her swim competition uniform"
+        src={`./public/${props.img}`}
+        alt={props.description}
       />
       <div className="card-stats">
         <img className="card-star-icon" src={starIcon} alt="Star Icon" />
         <span className="card-rating">{props.rating}</span>
         <span className="card-location gray-text">
           {" "}
-          ({props.reviewCount}) • {props.country}
+          ({props.reviewCount}) • {props.location}
         </span>
       </div>
       <p className="card-description">{props.title}</p>
